@@ -1,4 +1,4 @@
-const password = "yourpassword";
+const password = "07082025";
 
 let revealedCount = 0;
 let autoScrollInterval;
@@ -155,8 +155,6 @@ const reasons = [
 "The trust I feel when you’re around",
 "I love you in all forms possible"
 ];
-// ADD ALL 150 HERE
-];
 
 function checkPassword() {
   const input = document.getElementById("password").value;
@@ -166,7 +164,7 @@ function checkPassword() {
     document.getElementById("main-content").classList.remove("hidden");
     generateReasons();
   } else {
-    document.getElementById("error").innerText = "Wrong secret 😜";
+    document.getElementById("error").innerText = "Wrong password 😜";
   }
 }
 
@@ -225,5 +223,5 @@ function startAutoScroll() {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
       clearInterval(autoScrollInterval);
     }
-  }, 30);
+  }, 20);
 }
